@@ -1,0 +1,167 @@
+/* ===== General Page Styling ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;   /* light neutral background */
+  color: #000;           /* black text */
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;      /* white background */
+  color: #000;           /* black text */
+  padding: 20px;
+  text-align: center;
+}
+
+.school-badge {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #000;
+}
+
+.motto {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #000;
+  font-style: italic;    /* italic motto */
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background: #fff;              /* white background */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #000;                   /* black text */
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;             /* bold text */
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  color: #333;                   /* slightly darker text */
+  text-decoration: underline;    /* underline on hover */
+}
+
+nav button.active {
+  border-bottom: 2px solid #000; /* underline active section */
+  font-weight: bold;
+}
+
+/* ===== Search Bar ===== */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  width: 60%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #000;   /* black border */
+  border-radius: 6px;
+  background: #fff;         /* white background */
+  color: #000;              /* black text */
+  font-weight: bold;        /* bold input text */
+}
+
+.search-container input::placeholder {
+  color: #555;              /* darker placeholder */
+  font-style: italic;       /* italic placeholder */
+}
+
+/* ===== Sections ===== */
+section {
+  display: none;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section.active {
+  display: block;
+}
+
+h2 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+th {
+  background: #000;       /* black header row */
+  color: #fff;            /* white text */
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  user-select: none;      /* prevent text highlight */
+}
+
+th:hover {
+  background: #333;       /* darker on hover */
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+  background: #f9f9f9;    /* light gray */
+}
+
+tr:nth-child(odd) {
+  background: #fff;       /* white */
+}
+
+/* Hover effect */
+tr:hover {
+  background: #eaeaea;    /* highlight row on hover */
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+
+
+
